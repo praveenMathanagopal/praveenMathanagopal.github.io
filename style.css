@@ -1,0 +1,37 @@
+.content{
+    display:table;
+    height:100%;
+    width:100%;
+}
+
+html, body{
+    height:100%;
+}
+.header{
+    padding-top:20px;
+    font-size:2em;
+    font-weight: bold;
+    color:red;
+    text-align: center;
+
+}
+
+.wrapper{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding:10px;
+}
+
+.link{
+    font-size: 1.5em;
+    text-decoration: none;
+    display:block;
+    color:black;
+    margin-top:10px;
+}
+
+.link:hover{
+    cursor:pointer;
+    color:blue;
+}
