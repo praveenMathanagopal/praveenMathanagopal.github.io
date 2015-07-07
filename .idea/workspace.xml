@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41633482-1c04-4973-ba31-21b714f88b37" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="praveenMathanagopal.github.io.iws" />
@@ -239,7 +237,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436302087126</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="footer">
+      <created>1436302665491</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1436302665491</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -276,7 +280,8 @@
     <MESSAGE value="shopperlist added" />
     <MESSAGE value="final" />
     <MESSAGE value="-all links added" />
-    <option name="LAST_COMMIT_MESSAGE" value="-all links added" />
+    <MESSAGE value="footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
