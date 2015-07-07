@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    /*font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;*/
+    font-family:"Arial" !important ;
+}
+body{
+    background-color: #fff;
+}
+.container{
+    width:800px;
+    background-color: #BAB5B5;
+    margin:auto;
+    padding:10px 20px;
+}
+.hero-thumbnail{
+    border:1px solid #afd9ee;
+    box-shadow: 0px 0px 1px 1px rgba(136, 136, 136, 0.8);
+    text-align: left;
+    background-color: #fff;
+    margin:auto;
+    width:100%;
+    padding:10px 20px 20px 20px;
+}
+
+.showlist{
+    text-align:left;
+}
+
+.showlist .thumbnail{
+    border:1px solid #979484;
+    box-shadow: 0px 0px 1px 1px rgba(136, 136, 136, 1);
+    text-align: center;
+    width:245px;
+    background-color: #ffffff;
+    padding:20px;
+    margin:0.5%;
+    margin-top: 10px;
+    display:inline-block;
+}
+
+.showlist .image{
+    margin:0 auto 20px auto;
+}
+.showlist .desc{
+    margin:5px 0;
+    line-height: 15px;
+    font-size: 0.7em;
+    height:50px;
+}
+
+
+/*@media(max-width: 1656px){*/
+    /*.container{*/
+        /*max-width:60%;*/
+    /*}*/
+    /*.showlist .thumbnail{*/
+        /*width:30%;*/
+    /*}*/
+/*}*/
+.amt{
+    margin:30px;
+    font-size: large;
+}
+
+.ng-cloak{
+    display:none !important;
+}
+.btn{
+    border:1px solid #afd9ee;
+    box-shadow: 0px 0px 1px 1px rgba(136, 136, 136, 0.35);
+    margin:10px auto 0 auto;
+    width:100%;
+    text-align: center;
+    padding:10px;
+    font-size: 1em;
+    background-color: #BAB5B5;
+}
+
+.hero-thumbnail .image{
+    display:inline-block;
+    width:150px;
+}
+
+.hero-thumbnail img{
+    width:100%;
+}
+.hero-thumbnail .hero-desc{
+    font-size: 0.8em;
+    display:inline-block;
+    width:350px;
+    line-height: 17px;
+    vertical-align:top;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.hero-thumbnail .price-cart{
+    display:inline-block;
+    width:150px;
+    text-align: center;
+    margin-top: 20px;
+    float:right;
+    margin-right: 10px;
+}
+
+
+.hero-thumbnail span{
+    display: block;
+    
+}
+.hero-thumbnail ul{
+    list-style: disc;
+    padding-left: 5px;
+    margin:15px;
+}
+ul li{
+    margin:5px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.btn:hover, .thumbnail:hover{
+    border-color: #080808;
+
+}
+
+.thumbnail:active{
+    border: 2px solid #080808;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 817px) {
+
+    .container{
+        width:650px;
+    }
+
+    .hero-thumbnail .image{
+        width: 120px;
+    }
+    .hero-thumbnail .hero-desc{
+        width: 300px;
+    }
+    .hero-thumbnail .price-cart{
+        width: 120px;
+    }
+
+
+    .showlist .thumbnail{
+        width:298px;
+    }
+
+}
+
+@media (max-width: 667px) {
+
+    .container{
+        width:500px;
+    }
+    .showlist .thumbnail{
+        width:225px;
+    }
+
+    .hero-thumbnail .price-cart{
+        width:100%;
+        float:none;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .hero-thumbnail .hero-desc{
+        width:60%;
+
+    }
+
+    .hero-thumbnail{
+        padding-bottom: 5px;
+    }
+    .hero-thumbnail .amt{
+        margin-bottom: 0;
+    }
+    .hero-thumbnail .image{
+        width:30%;
+
+    }
+
+}
+
+@media (max-width: 517px) {
+
+    .container{
+        width:100%;
+    }
+
+    .hero-thumbnail .image{
+        display: block;
+        width:150px;
+        margin:0px auto 20px auto;
+
+    }
+    .hero-thumbnail .hero-desc{
+        display: block;
+        width:90%;
+        text-align: center;
+        margin:10px auto;
+    }
+    .hero-thumbnail ul{
+        list-style: none;
+    }
+
+    .showlist .thumbnail{
+        width:100%;
+    }
+
+}
+
