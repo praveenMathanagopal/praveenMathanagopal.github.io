@@ -1,11 +1,11 @@
 .content{
     display:table;
-    height:100%;
+    height:90%;
     width:100%;
 }
 
 html, body{
-    height:100%;
+    height:95%;
 }
 .header{
     padding-top:20px;
@@ -22,7 +22,13 @@ html, body{
     vertical-align: middle;
     padding:10px;
 }
+.footer{
+    padding:10px;
+    text-align: right;
+    font-weight: bold;
+    color:red;
 
+}
 .link{
     font-size: 1.5em;
     text-decoration: none;
