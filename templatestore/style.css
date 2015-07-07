@@ -1,0 +1,25 @@
+
+.template img{
+    width:70%;
+}
+
+.template{
+    text-align: center;
+    border-bottom:1px solid #5e5e5e;
+    padding-bottom: 10px;
+}
+
+.template a{
+    width: 50%;
+    margin:10px auto;
+}
+
+.template-detail{
+    text-align: center;
+}
+
+.template-detail img{
+    width: 90%;
+    margin:10px auto;
+}
+

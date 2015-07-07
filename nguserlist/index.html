@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>NG - User List</title>
+    <link href="stylesheets/styles.css" rel="stylesheet">
+</head>
+<body ng-app="userapp">
+
+<div class="container" ng-controller="MainCtrl as ctrl">
+
+    <div class="header">
+        <h2>UX Society Members</h2>
+        <a href="https://github.com/PraveenM89/praveenm89.github.io/tree/master/nguserlist">&lt; source code &gt;</a>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="searchcontent">
+        <input class="searchbox" type="search" ng-model="ctrl.searchText" ng-change="ctrl.setPage(0)"
+               placeholder="Type the search string"
+               name="searchstring">
+    </div>
+
+    <div class="status" ng-hide="ctrl.userData">
+        <div class="box">
+            Loading......
+        </div>
+    </div>
+
+    <div class="loadable-content" ng-show="ctrl.userData">
+
+        <div class="paginator">
+        <span class="pageno" ng-repeat="page in ctrl.userData |  filter:ctrl.searchText | paginator"
+              ng-click="ctrl.setPage($index)"
+              ng-class="$index == ctrl.pageno?'active':''" ng-bind="page">
+        </span>
+        </div>
+
+        <div class="right-panel" ng-show="ctrl.current">
+
+            <div class="content-header"
+                 ng-bind-template="{{ctrl.current.firstName}} {{ctrl.current.middleInitial}} {{ctrl.current.surname}}">
+
+            </div>
+            <div class="user-image">
+                <img ng-src="{{ctrl.current.portrait}}" alt="portrait-image">
+            </div>
+            <div class="description">
+
+                <div class="desc-1" ng-bind="ctrl.current.company">
+                </div>
+                <em>
+                    <div class="desc-2" ng-bind="ctrl.current.email">
+                    </div>
+                </em>
+                <samp>
+                    <div class="desc-3" ng-bind-template='" {{ctrl.current.motto}} "'>
+                    </div>
+                </samp>
+
+            </div>
+
+        </div>
+
+        <div class="left-panel">
+            <div class="row table-header">
+                <div class="col col-1">
+                    NAME
+                </div>
+                <div class="col col-2">
+                    OCCUPATION
+                </div>
+                <div class="col col-3">
+                    COMPANY
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="row table-data"
+                 ng-repeat="data in ctrl.userData | pagesplitter: ctrl.pageno | filter:ctrl.searchText"
+                 ng-click="ctrl.setCurrent(data)">
+                <div class="col col-1"
+                     ng-bind-template="{{data.firstName}} {{data.middleInitial}} {{data.surname}}"></div>
+                <div class="col col-2" ng-bind="data.occupation"></div>
+                <div class="col col-3" ng-bind="data.company"></div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/MainCtrl.js"></script>
+<script src="scripts/factory/DataBank.js"></script>
+<script src="scripts/filter/paginator.js"></script>
+<script src="scripts/filter/pagesplitter.js"></script>
+</body>
+</html>
