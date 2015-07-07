@@ -8,6 +8,12 @@
     border-bottom:1px solid #5e5e5e;
     padding-bottom: 10px;
 }
+.source{
+    width:100%;
+    text-align: right;
+    padding:5px;
+}
+
 
 .template a{
     width: 50%;
