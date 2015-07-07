@@ -22,13 +22,13 @@
                name="searchstring">
     </div>
 
-    <div class="status" ng-hide="ctrl.userData">
+    <div class="status" ng-hide="ctrl.userData.length!==0">
         <div class="box">
             Loading......
         </div>
     </div>
 
-    <div class="loadable-content" ng-show="ctrl.userData">
+    <div class="loadable-content" ng-show="ctrl.userData.length!==0">
 
         <div class="paginator">
         <span class="pageno" ng-repeat="page in ctrl.userData |  filter:ctrl.searchText | paginator"
@@ -78,7 +78,7 @@
             </div>
 
             <div class="row table-data"
-                 ng-repeat="data in ctrl.userData | pagesplitter: ctrl.pageno | filter:ctrl.searchText"
+                 ng-repeat="data in ctrl.userData |  filter:ctrl.searchText | pagesplitter: ctrl.pageno "
                  ng-click="ctrl.setCurrent(data)">
                 <div class="col col-1"
                      ng-bind-template="{{data.firstName}} {{data.middleInitial}} {{data.surname}}"></div>

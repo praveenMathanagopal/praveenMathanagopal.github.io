@@ -10,23 +10,22 @@
 
     function mainController(DataBank) {
         var main = this;
-        this.userData = null;
         //fetch the data from the factory
         DataBank.getData();
-        this.userData = DataBank.userData;
+        main.userData = DataBank.userData;
 
-        this.setCurrent = setCurrent;
-        this.setPage = setPage;
-        this.setPage(0);
+        main.setCurrent = setCurrent;
+        main.setPage = setPage;
+        main.setPage(0);
 
 
         ////////////////////////////////////
         function setCurrent(user) {
-            this.current = user;
+            main.current = user;
         }
 
         function setPage(pageno) {
-            this.pageno = pageno;
+            main.pageno = pageno;
             console.log(pageno);
         }
 

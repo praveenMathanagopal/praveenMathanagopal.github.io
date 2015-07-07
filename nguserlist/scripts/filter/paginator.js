@@ -12,6 +12,7 @@
         //////////////////////////////////
         function pageFilter(arr) {
             var final = [];
+            console.log("paginator:"+arr.length);
             var pages = arr.length / 14;
             if (arr.length % 14 != 0)
                 pages++;
