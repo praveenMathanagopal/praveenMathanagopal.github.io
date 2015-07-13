@@ -1,0 +1,124 @@
+<div class="container">
+    <div class="contact-view main-content">
+        <h3>Contact - Details</h3>
+
+        <div class="display-content">
+            <div class="left-panel">
+                <div class="image"></div>
+                <div class="buttons">
+                    <a href="#/edit/{{contrl.contact._id.$oid}}">Edit</a>
+                    <a ng-click="contrl.delete(contrl.contact._id.$oid)">Delete</a>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="element name">
+                    <div class="label"> Name
+                    </div>
+                    <div class="data" ng-bind="contrl.contact.name">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="element phone">
+                    <div class="label">
+                        Phone
+                    </div>
+                    <div class="data">
+                        <div class="sub-element">
+                            <div class="label text">
+                                Personal
+                            </div>
+                            <div class="data text" ng-bind="contrl.contact.phone.personal">
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-element">
+                            <div class="label text">
+                                Work
+                            </div>
+                            <div class="data text" ng-bind="contrl.contact.phone.work">
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-element">
+                            <div class="label text">
+                                Home
+                            </div>
+                            <div class="data text" ng-bind="contrl.contact.phone.home">
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-element" ng-hide="contrl.contact.phone.others.length==0">
+                            <div class="label text">
+                                Others
+                            </div>
+                            <div class="data">
+                                    <span class="other text" ng-repeat="num in contrl.contact.phone.others"
+                                          ng-bind="num"></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="element email">
+                    <div class="label text">
+                        Email
+                    </div>
+                    <div class="data">
+                        <div class="sub-element">
+                            <div class="label text">
+                                Personal
+                            </div>
+                            <div class="data text" ng-bind="contrl.contact.email.pemail">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="sub-element">
+                            <div class="label text">
+                                Work
+                            </div>
+                            <div class="data text" ng-bind="contrl.contact.email.wemail">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="element address">
+                    <div class="label text">
+                        Address
+                    </div>
+                    <div class="data">
+                            <span class="line text" ng-repeat="line in contrl.contact.addr"
+                                  ng-bind="line"> </span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="element note" ng-show="contrl.contact.desc">
+                    <div class="label text">
+                        Note
+                    </div>
+                    <div class="data desc text" ng-bind="contrl.contact.desc">
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="element date">
+                    <div class="label text">
+                        Last Updated
+                    </div>
+                    <div class="data text" ng-bind="contrl.contact.edited">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>

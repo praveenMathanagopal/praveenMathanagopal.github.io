@@ -1,0 +1,353 @@
+body, html {
+    background-color: #444;
+}
+
+* {
+    color: #444444;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*////////////////////*/
+
+.container {
+    padding: 5px 10px;
+    background-color: #444;
+    width: 85%;
+    margin: 3px auto;
+    /*border:1px solid #444444;*/
+    /*box-shadow: 0px 0px 3px 3px rgba(0, 0, 0,0.2);*/
+}
+
+.container.contacts {
+    width: 70%;
+}
+
+header {
+    margin: 0px 0px 10px 0px;
+    background-color: #ff7256;
+    padding: 10px 20px;
+    padding-left: 100px;
+    border-bottom: 1px solid #fff;
+}
+
+header .title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: monospace sans-serif;
+    float: left;
+}
+
+header .title a:hover {
+    color: #fff !important;
+}
+
+header .source {
+    padding: 10px 5px;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.main-content {
+    padding: 3px 10px;
+    margin: 3px 0px;
+}
+
+.main-content .search-content {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.search-content input {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    margin: 0px;
+    outline: none;
+    vertical-align: baseline;
+    border: 1px solid #fff;
+    font-family: sans-serif;
+    padding-left: 50px;
+}
+
+.search-content input:focus {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #444;
+}
+
+.add-button, button {
+    text-align: right;
+    padding-right: 20px;
+    margin: 5px 5px;
+}
+
+.add-button a, .contact-view a, .add-view a, button {
+    display: inline-block;
+    background-color: #ff7256;
+    padding: 5px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    font-variant: historical-forms;
+    border: 1px solid #fff;
+}
+
+.add-button a:hover, .contact-view a:hover, .add-view a:hover, button:hover {
+    cursor: pointer;
+    color: #ff7256;
+    background-color: #444444;
+}
+
+.pagination {
+    padding: 2px;
+    text-align: center;
+}
+
+.pagination .page-index {
+    margin-top: 3px;
+    margin-right: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: monospace;
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #d5634b;
+    border: 1px solid #fff;
+}
+
+.pagination .page-index:hover {
+
+    color: #ff7256;
+    cursor: pointer;
+    background-color: #444444;
+}
+
+.pagination .page-index.active-pageindex {
+
+    color: #000;
+    border: 1px solid #ff7256;
+    background-color: #fff;
+
+}
+
+.table {
+    margin: 5px 10px;
+}
+
+.table .data {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.table .head {
+    background-color: #ff7256;
+    color: #444;
+    margin-bottom: 6px;
+    border: 1px solid #fff;
+}
+
+.col {
+    float: left;
+    text-align: center;
+
+    font-family: monospace;
+    padding: 5px;
+
+}
+
+.col1 {
+    width: 33%;
+}
+
+.col2 {
+    width: 25%;
+}
+
+.col3 {
+    width: 41%;
+}
+
+.head .col {
+    border-right: 1px solid #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.head .col3 {
+    border-right: 0 !important;
+}
+
+.table .data .row {
+    background-color: #fff;
+    color: #444;
+    margin: 0;
+    padding: 4px;
+    border: 1px solid #000;
+}
+
+.table .data .row:hover {
+    background-color: #bbb;
+}
+
+.contact-view *, .add-view * {
+    font-family: Arial;
+    color: white;
+}
+
+.contact-view, .add-view {
+    width: 85%;
+    margin: 20px auto 10px auto;
+}
+
+.contact-view .display-content {
+    width: 100%;
+    margin: 20px 0 10px 0;
+    padding: 10px 0;
+}
+
+.contact-view .left-panel {
+    width: 25%;
+
+    float: left;
+
+}
+
+.contact-view .left-panel .image {
+    border: 1px solid #ff7256;
+    height: 200px;
+    width: 100%;
+}
+
+.contact-view .right-panel {
+    width: 74%;
+    float: right;
+    padding-left: 10px;
+}
+
+.contact-view .right-panel .element {
+    margin: 0 0 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff7256;
+}
+
+.right-panel .element .label {
+    font-weight: bold;
+    float: left;
+    padding: 5px;
+}
+
+.right-panel .element .data {
+
+    float: left;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.label {
+    font-weight: bold;
+    width: 100px;
+}
+
+.line {
+    display: block;
+}
+
+span.other {
+    display: block;
+    margin-top: 4px;
+}
+
+.contact-view .buttons {
+    margin: 20px 10px;
+    text-align: center;
+
+}
+
+.contact-view a {
+    margin-top: 10px;
+    color: #444;
+}
+
+.add-view .display-content {
+    border: 1px solid #ff7256;
+    margin: 20px 0 0 0;
+}
+
+.add-view .form-section {
+    width: 100%;
+    padding: 20px 10px 10px 40px;
+    margin: 5px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.add-view .form-ele {
+    margin-bottom: 15px;
+
+}
+
+.add-view .heading {
+    margin-bottom: 10px;
+    float: left;
+    font-weight: bold;
+}
+
+.add-view .form-group {
+    float: left;
+    margin-left: 20px;
+}
+
+.add-view .form-ele label {
+    width: 80px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.form-section .heading {
+    width: 100px;
+    font-weight: bold;
+}
+
+.form-section input {
+    width: 250px;
+    height: 25px;
+    padding: 5px 10px;
+    color: black;
+
+}
+
+.form-section.name input {
+    width: 355px;
+
+}
+
+.form-section textarea {
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+    color: black;
+
+}
+
+.add-view .buttons {
+    font-family: sans-serif;
+    padding: 20px 30px;
+}
+
+.add-view .buttons a, .add-view button {
+    font-family: monospace;
+    margin-right: 25px;
+    color: #444 !important;
+}
+
+

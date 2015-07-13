@@ -1,0 +1,24 @@
+{
+  "name": "Praveen Mathanagopal",
+  "email": {
+    "pemail": "praveen.mathanagopal@gmail.com",
+    "wemail": "praveen@work.com"
+  },
+  "edited": "02-11-2015",
+  "addr": {
+    "addr1": "9523 85th Street",
+    "addr2": "3FL Ozone Park",
+    "city": "New York City",
+    "state": "New York",
+    "country": "United States",
+    "pincode": "11416"
+  },
+  "phone":
+  {
+    "personal":"7165503747",
+    "work":"7165503747W",
+    "home":"7165503747-H",
+    "others":[]
+  },
+  "desc":""
+}

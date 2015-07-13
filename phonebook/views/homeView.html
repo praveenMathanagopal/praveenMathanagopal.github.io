@@ -1,0 +1,51 @@
+<div class="container">
+
+    <div class="main-content">
+        <div class="search-content">
+            <input type="search" ng-model="home.searchText" placeholder="search contact">
+        </div>
+        <div class="add-button">
+            <a href="#add">ADD</a>
+        </div>
+    </div>
+</div>
+<div class="pagination">
+    <span class="page-index" ng-repeat="index in home.paginationData" ng-bind="index"
+          ng-click="home.setSortAlphabet(index)" ng-class="index==home.sortAlphabet?'active-pageindex':''"></span>
+</div>
+<div class="container contacts">
+    <div class="main-content">
+        <div class="table">
+            <div class="row head">
+                <div class="col col1">
+                    Full Name
+                </div>
+                <div class="col col2">
+                    Phone
+                </div>
+                <div class="col col3">
+                    E-mail
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="data">
+                <div class="row" ng-repeat="contact in home.contacts | filter:home.searchText | sortbyAlphabet:home.sortAlphabet">
+                    <a ng-href="#contact/{{contact._id.$oid}}">
+                        <div class="col col1" ng-bind="contact.name">
+
+                        </div>
+                        <div class="col col2" ng-bind="contact.phone.personal">
+                            7165503747
+                        </div>
+                        <div class="col col3" ng-bind="contact.email.pemail">
+                            praveen.mathanagopal@gmail.com
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

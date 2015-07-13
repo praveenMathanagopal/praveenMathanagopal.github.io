@@ -1,0 +1,102 @@
+<div class="container">
+    <div class="add-view main-content">
+        <h3> Edit - Contact </h3>
+
+        <div class="display-content">
+            <form class="form" name="editform" ng-submit = "edit.update()">
+                <div class="form-section name">
+                    <div class="heading">Name</div>
+                    <div class="form-ele">
+                        <input type="text" placeholder="full name" ng-model="edit.editContact.name" required>
+                    </div>
+                </div>
+
+                <div class="form-section phone">
+                    <div class="heading">Phone</div>
+                    <div class="form-group">
+                        <div class="form-ele">
+                            <label>Personal</label>
+                            <input type="text" placeholder="personal phone" ng-model="edit.editContact.phone.personal">
+                        </div>
+                        <div class="form-ele">
+                            <label>Work</label>
+                            <input type="text" placeholder="work phone" ng-model="edit.editContact.phone.work">
+                        </div>
+                        <div class="form-ele">
+                            <label>Home</label>
+                            <input type="text" placeholder="home phone" ng-model="edit.editContact.phone.home">
+                        </div>
+                        <div class="form-ele">
+                            <label>Others</label>
+                            <input type="text" placeholder="enter info separated by comma(,)" ng-model="add.others">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="form-section email">
+                    <div class="heading">Email</div>
+                    <div class="form-group">
+                        <div class="form-ele">
+                            <label>Personal</label>
+                            <input type="text" placeholder="personal email" ng-model="edit.editContact.email.pemail">
+                        </div>
+                        <div class="form-ele">
+                            <label>Work</label>
+                            <input type="text" placeholder="work email" ng-model="edit.editContact.email.wemail">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="form-section address">
+                    <div class="heading">Address</div>
+                    <div class="form-group">
+                        <div class="form-ele">
+                            <label>Line 1</label>
+                            <input type="text" placeholder="Street details" ng-model="edit.editContact.addr[0]">
+                        </div>
+                        <div class="form-ele">
+                            <label>Line 2</label>
+                            <input type="text" placeholder="Apt number" ng-model="edit.editContact.addr[1]">
+                        </div>
+                        <div class="form-ele">
+                            <label>City</label>
+                            <input type="text" placeholder="city" ng-model="edit.editContact.addr[2]">
+                        </div>
+                        <div class="form-ele">
+                            <label>State</label>
+                            <input type="text" placeholder="state" ng-model="edit.editContact.addr[3]">
+                        </div>
+                        <div class="form-ele">
+                            <label>Country</label>
+                            <input type="text" placeholder="country" ng-model="edit.editContact.addr[4]">
+                        </div>
+                        <div class="form-ele">
+                            <label>Zip</label>
+                            <input type="text" placeholder="postal code" ng-model="edit.editContact.addr[5]">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="form-section desc">
+                    <div class="heading">Notes</div>
+                    <div class="form-ele">
+                        <textarea ng-model="edit.editContact.desc"></textarea>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit"> Update </button>
+                    <a href="#/contact/{{edit.editContact._id.$oid}}"> Back </a>
+                    <a ng-click="edit.delete(edit.editContact._id.$oid)"> Delete </a>
+                    <a href="#/"> Cancel </a>
+                </div>
+            </form>
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+
+
+</div>
