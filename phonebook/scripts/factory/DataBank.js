@@ -46,7 +46,7 @@
         function addContact(contact) {
             return $http.post(url, contact, {
                 params: {"apiKey": "qGSuEr-EpBHvBAB5HfY7QJIruzNOqSLk"}
-            })
+            });
         }
 
         function updateContact(editContact){

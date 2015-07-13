@@ -27,7 +27,7 @@
                 .error(function(status, data){
                     console.log(status + " deletion unsuccessful");
                 })
-        }
+        };
     }
 })();/**
  * Created by Praveen on 7/11/2015.
