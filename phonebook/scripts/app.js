@@ -38,8 +38,8 @@
                 url: "/edit/{id}",
                 templateUrl: "./views/editView.html",
                 controller: "EditCtrl as edit",
-                resolve:{
-                    editcontact:['DataBank', '$stateParams', function(DataBank, $stateParams){
+                resolve: {
+                    editcontact: ['DataBank', '$stateParams', function (DataBank, $stateParams) {
                         console.log("edit....");
                         return DataBank.getOneContact($stateParams.id).then(function (response) {
                             return response.data;
@@ -50,3 +50,4 @@
         $urlRouterProvider.otherwise('/');
     }
 })();
+
